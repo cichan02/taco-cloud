@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
@@ -28,7 +27,7 @@ import tacos.data.IngredientRepository;
 public class DesignTacoController {
 	private final IngredientRepository ingredientRepo;
 	
-	@Autowired
+//	Unnecesary @Autowired
 	public DesignTacoController(IngredientRepository ingredientRepo) {
 		this.ingredientRepo = ingredientRepo;
 	}
