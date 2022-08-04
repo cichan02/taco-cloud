@@ -1,8 +1,6 @@
 package tacos;
 
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.validation.constraints.Digits;
@@ -14,13 +12,7 @@ import org.hibernate.validator.constraints.CreditCardNumber;
 import lombok.Data;
 
 @Data
-public class TacoOrder implements Serializable {
-	private static final long serialVersionUID = 4091744167716642160L;
-
-	private long id;
-	
-	private Date placedAt;
-	
+public class TacoOrder {
 	@NotBlank(message = "Delivery name is required")
 	private String deliveryName;
 	

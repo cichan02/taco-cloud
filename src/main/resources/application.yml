@@ -1,4 +1,13 @@
 spring:
+  h2:
+    console:
+      enabled: true
   datasource:
+    username: sa
+    password:
+    url: jdbc:h2:mem:tacocloud
+    driverClassName: org.h2.Driver
     generate-unique-name: false
     name: tacocloud
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
